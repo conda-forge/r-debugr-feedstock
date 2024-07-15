@@ -1,6 +1,5 @@
 {% set version = '0.0.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-debugr
@@ -13,8 +12,7 @@ source:
   sha256: 96f5086952695f10d5c71ae52e0c3e4cf63ff3ae6dd08d4a01a0ad088106d851
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
